@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FloatingHeaderComponent implements OnInit {
 
+
+  showBar: boolean = true;
+
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
+toggleBar() {
+    this.showBar = !this.showBar;
+}
 
 }

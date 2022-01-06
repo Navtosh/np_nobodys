@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
+  showBar: boolean = true;
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  toggleBar() {
+    this.showBar = !this.showBar;
+}
 }

@@ -1,4 +1,4 @@
-<div class="floating-header">
+<div class="floating-header" [ngClass]="showBar ? 'showin' : 'out'">
     <div class="container">
       <div class="row">
         <div class="col-md-7 col-sm-6 col-xs-12 align-self-center">
@@ -8,7 +8,8 @@
           <app-header-social></app-header-social>
 
         </div>
-        <a class="slide_btn">-</a>
+        <a class="slide_btn" (click)="toggleBar()"> {{showBar ? '-' : '+'}}</a>
+        
       </div>
     </div>
   </div>

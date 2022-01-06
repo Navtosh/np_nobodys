@@ -96,6 +96,12 @@
     right: 0;
     z-index: 100;
   }
+  .floating-header.showin{
+    top:0;
+  }
+  .floating-header.out{
+    top:-60px;
+  }
   .floating-header .extra-links a {
     color: #9f9f9f;
     font-size: 13px;
