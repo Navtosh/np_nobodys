@@ -1,0 +1,14 @@
+<ul class="list-unstyled">
+    <li class="media" *ngFor="let item of data">
+      <div class="media-body">
+        <h5 class="mt-0 mb-1">{{item.title}}</h5>
+        <h6>{{item.adminName}}, {{item.domain}}  <br />{{item.day}}, {{item.date}}</h6>
+        <p>
+          <span innerHtml="{{item.containr}}"></span>         
+        </p>
+        <a href="{{item.url}}"
+          >Read More <i class="fa fa-angle-double-right"></i
+        ></a>
+      </div>
+    </li>
+  </ul>

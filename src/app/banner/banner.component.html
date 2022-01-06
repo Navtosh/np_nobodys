@@ -1,0 +1,48 @@
+<div class="container-fluid gray_bg">
+    <div class="justify-content-center">
+      <div class="container">
+        <div class="justify-content-center">
+          <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+              <li data-target="#demo" data-slide-to="3"></li>
+              <li data-target="#demo" data-slide-to="4"></li>
+            </ul>
+            <div class="carousel-inner">
+              <div class="carousel-item active" [ngClass]="{'active': isFirst }" *ngFor="let item of banner; let isFirst = first;">
+                <div class="row">
+                  <div
+                    class="col-lg-5 col-md-5 col-sm-6 col-xs-12 align-self-center"
+                  >
+                    <div class="banner_discription">
+                      <h1>{{item.title}}</h1>
+                      <p>
+                        <span innerHtml={{item.content}}></span>
+                      </p>
+                      <button
+                        class="btn btn-small btn-primary btn-blue"
+                        value="SEARCH"
+                      >
+                      {{item.buttonName}} <i class="fa fa-angle-double-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-7 col-md-7 col-sm-6 col-xs-12 align-self-center"
+                  >
+                    <img
+                      src="{{item.imgUrl}}"
+                      alt="NoBodysFool"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
